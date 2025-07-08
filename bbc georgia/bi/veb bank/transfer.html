@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>გადარიცხვა | Brizano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>💸 თანხის გადარიცხვა</h2>
+
+  <div class="container">
+    <input type="text" id="recipient-phone" placeholder="📞 მიმღების ტელეფონის ნომერი" oninput="fillRecipientDetails()">
+    
+    <input type="text" id="recipient-name" placeholder="სახელი" disabled>
+    <input type="text" id="recipient-surname" placeholder="გვარი" disabled>
+    <input type="text" id="recipient-account" placeholder="ანგარიშის ნომერი" disabled>
+
+    <input type="number" id="amount" placeholder="💶 თანხა (₾)">
+    
+    <button onclick="sendMoney()">გადარიცხვა</button>
+    <p id="message"></p>
+    
+    <button onclick="window.location.href='main.html'">🔙 დაბრუნება</button>
+  </div>
+
+  <script src="transfer.js"></script>
+</body>
+</html>

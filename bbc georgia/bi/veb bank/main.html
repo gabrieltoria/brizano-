@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>მთავარი გვერდი | Brizano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🎉 ბარათი • პროფილი • გადარიცხვა</h2>
+
+  <div class="container">
+    <p><strong>მომხმარებელი:</strong> <span id="user-name"></span></p>
+    <p><strong>ბალანსი:</strong> <span id="user-balance"></span> ₾</p>
+
+    <button onclick="location.href='card.html'">💳 ბარათი</button>
+    <button onclick="location.href='profile.html'">🙍 პროფილი</button>
+    <button onclick="location.href='transfer.html'">💸 თანხის გადარიცხვა</button>
+    <button onclick="logout()">🚪 გასვლა</button>
+
+    <h3>📑 ტრანზაქციები</h3>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

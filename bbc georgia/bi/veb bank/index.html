@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Brizano Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Brizano Bank 💰</h1>
+
+  <div class="container">
+    <h2>📝 რეგისტრაცია</h2>
+    <input type="text" id="reg-name" placeholder="სახელი">
+    <input type="text" id="reg-surname" placeholder="გვარი">
+    <input type="text" id="reg-id" placeholder="პირადი ნომერი">
+    <input type="text" id="reg-phone" placeholder="ტელეფონის ნომერი">
+    <input type="password" id="reg-password" placeholder="პაროლი">
+    <button onclick="register()">რეგისტრაცია</button>
+  </div>
+
+  <div class="container">
+    <h2>🔐 შესვლა</h2>
+    <input type="text" id="login-phone" placeholder="ტელეფონის ნომერი">
+    <input type="password" id="login-password" placeholder="პაროლი">
+    <button onclick="login()">შესვლა</button>
+  </div>
+
+  <p id="message"></p>
+
+  <button onclick="location.href='panel.html'" class="employee-btn">ხარ ჩვენი თანამშრომელი?</button>
+
+  <script src="app.js"></script>
+</body>
+</html>

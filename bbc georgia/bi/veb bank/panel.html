@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>თანამშრომლის პანელი | Brizano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🔐 თანამშრომლის პანელი</h2>
+
+  <div class="container">
+    <input type="password" id="passcode" placeholder="შეიყვანე პასკოდი">
+    <button onclick="verifyPasscode()">შესვლა</button>
+  </div>
+
+  <div class="container" id="employee-area" style="display: none;">
+    <input type="text" id="search-id" placeholder="მომხმარებლის პირადი ნომერი">
+    <button onclick="searchUser()">მომხმარებლის ძებნა</button>
+
+    <div id="user-info" style="display:none;">
+      <h3>🔍 მომხმარებლის ინფორმაცია</h3>
+      <p><strong>სახელი:</strong> <span id="u-name"></span></p>
+      <p><strong>გვარი:</strong> <span id="u-surname"></span></p>
+      <p><strong>ანგარიშის ნომერი:</strong> <span id="u-account"></span></p>
+      <p><strong>ბალანსი:</strong> <span id="u-balance"></span> ₾</p>
+
+      <button onclick="sendGift()">🎁 თანხის ჩარიცხვა</button>
+      <button onclick="resetPassword()">🔐 პაროლის შეცვლა</button>
+      <button onclick="showCard()">💳 ბარათის ნახვა</button>
+      <button onclick="window.location.href='index.html'">🔙 დაბრუნება</button>
+    </div>
+  </div>
+
+  <script src="balance.js"></script>
+  <script src="panel.js"></script>
+</body>
+</html>
